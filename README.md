@@ -1,6 +1,6 @@
 # bs19-help
 
-A lightweight, player-only **Survival Field Manual & Controls NUI** for FiveM servers running **BeyondSurvival (BS19)** and **The Apocalypse Project** map.
+A lightweight, player-only **Survival Field Manual & Controls NUI** for FiveM servers running **BeyondSurvival (BS19)**.
 
 Built with a weathered post-apocalyptic survival UI, instant live search, and a `0.00ms` idle client footprint so new and returning players always have controls and survival mechanics one keypress away.
 
