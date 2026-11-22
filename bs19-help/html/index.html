@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bs19-help | Survival Field Manual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="browser-reopen-btn" class="browser-reopen-btn hidden" type="button">
+    <span>Open Survival Help</span>
+    <kbd class="keycap keycap-sm">[F9]</kbd>
+  </button>
+
+  <div id="nui-backdrop" class="nui-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="menu-title">
+    <div class="nui-shell">
+      <aside class="nui-sidebar" aria-label="Help Categories">
+        <div class="sidebar-header">
+          <div class="brand-kicker">BeyondSurvival · BS19</div>
+          <h1 id="menu-title" class="brand-title">Survival Field Manual</h1>
+          <p id="menu-subtitle" class="brand-subtitle">The Apocalypse Project</p>
+        </div>
+
+        <nav id="sidebar-nav" class="sidebar-nav"></nav>
+      </aside>
+
+      <main class="nui-main">
+        <header class="nui-topbar">
+          <div class="search-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search keybinds, survival mechanics, or /help..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="clear-search-btn" class="clear-search hidden" type="button" aria-label="Clear search">Clear</button>
+          </div>
+
+          <button id="close-btn" class="close-btn" type="button" title="Close menu (ESC)">
+            <span>Close</span>
+            <kbd class="keycap keycap-sm">ESC</kbd>
+          </button>
+        </header>
+
+        <section id="content-scroll" class="nui-content">
+          <div id="section-header" class="section-header">
+            <h2 id="section-title" class="section-title">Getting Started</h2>
+            <p id="section-meta" class="section-meta"></p>
+          </div>
+          <div id="content-body" class="content-body"></div>
+        </section>
+
+        <footer class="nui-footer">
+          <p id="footer-rebind-note" class="footer-note">
+            You can rebind keys anytime in ESC &gt; Settings &gt; Key Bindings &gt; FiveM.
+          </p>
+          <div class="footer-shortcut">
+            <span>Toggle Menu</span>
+            <kbd id="footer-toggle-key" class="keycap keycap-sm">[F9]</kbd>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
